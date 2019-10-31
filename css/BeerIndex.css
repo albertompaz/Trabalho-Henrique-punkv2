@@ -1,0 +1,168 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+    header {
+        position: relative;
+        background-color: orange;
+    }
+        .titles {
+            text-align: center;
+            color: white;
+            padding: 20px;
+
+        }
+            .titles h1 {
+                font-weight: bold;
+                font-size: 40px;
+                padding: 20px;
+            }
+            .titles h2 {
+                font-size: 14px;
+            }
+        
+            .home-fav {
+                position: absolute;
+                top: 15px;
+                right: 5px;
+            }
+        .home-fav ul {
+            font-size: 15px;
+
+        }
+        
+            .home-fav ul li {
+                display: inline;
+                margin-left: 20px;
+                
+            }
+
+            .home-fav a {
+                text-decoration: none;
+                color: white;
+            }
+
+        .busca {
+            text-align: center;
+            padding-bottom: 30px;
+        }
+
+            input {
+                width: 500px;
+            }
+                #buscar-cerveja {
+                    width: 50%;
+                }
+
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
+
+.config-navbar {
+    background-color: orange;
+}
+
+.cor-link {
+    color:white;
+}
+
+.config-ul {
+    display:inline; 
+}
+
+.nav.navbar-nav li {
+    float: left;
+}
+
+.menu-beer {
+    width: 100%;
+}
+
+.tamanho-font-a {
+    font-size: 13px;
+}
+
+.card-img-top {
+    width: 100px;
+    height: 300px;
+    margin: 0 auto;
+    
+}
+
+i {
+    text-align: right;
+    padding-right: 5px;
+    padding-top: 5px;
+}
+
+#imagemModal {
+    /*height: 500px;
+    width: 130px;*/
+    height: 90%;
+    width: 100%;
+}
+
+#modalTitle {
+    color: orange;
+    font: bold;
+}
+
+.fontModalTitle {
+    font-size: 30px;
+}
+
+.fontModalSubTitle {
+    color: #cccccc;
+}
+
+.ibuAbvEbc {
+    color: gray;
+}
+
+
+.tracoModal:before {
+    content: '-----------';
+}
+
+.tracoModal {
+    margin: 18px 0px;
+}
+
+.linhaIbu {
+    margin-bottom: 23px;
+}
+
+p .bestServed{
+    margin: 18px 0px;
+}
+
+.card-img-modal {
+    
+    height: 300px;
+}
+
+.youMight {
+    font-size: 20px;
+    color: orange;
+    font: bold;
+}
+
+.card {
+    box-shadow: 0 0 5px grey;
+}
+
+.card:hover {
+    transition: 0.5s ease-in;
+    box-shadow: 0 0 7px #333;
+    transition: box-shadow 0.7s;
+    transition: 0.5s ease-out;
+    z-index: 100;
+}
+
+.fas {
+    color: orange;
+}
+
+label {
+  color: white;  
+}

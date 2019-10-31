@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- CSS Reset -->
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- Nosso CSS -->
+    <link rel="stylesheet" href="css/BeerIndex.css">
+    <title>The Beer Bank</title>
+    <!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar fixed-top config-navbar">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav ml-auto config-ul">
+                <li><a class="navbar-brand cor-link tamanho-font-a" href="BeerIndex.html">HOME</a></li>
+                <li><a class="navbar-brand cor-link tamanho-font-a" href="Favourite.html">FAVOURITE</a></li>
+            </ul> 
+        </div>
+    </nav>
+
+    <header>               
+        <div class="titles">
+            <h1>The Beer Bank</h1>
+            <h2>Find your favourite beer here</h2>
+        </div>
+        <div class="busca">
+            <input  id="buscar-cerveja" type="search" placeholder="Search for beer name">
+        </div>
+
+    </header>
+
+    <div class="container">
+
+            <div class="row">
+        
+                    <div class="col-12 text-center my-5"> <!--my é margem em todo o eixo y, top e botton (tambem tem mx-->
+            
+                      <h1 class="display-4">Your Favourite Beers</h1> <!--display vai de 1 ate 5 aonde 1 é o maior-->
+                    
+                    </div>
+            
+            </div>
+
+            <div class="card-deck" id="listaBeers">
+                
+            </div>
+
+    </div>
+
+
+
+
+    <!--Modal-->
+    <div class = "modal fade" id="modalCervejas" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            
+                            <div class="col-3" id="modalFig">
+
+                            </div>
+
+                            <div class="col-9" id="modalText">
+                                <p id="modalTitle" class="fontModalTitle"></p>
+                                <p class = "my-3" id="modalSubTitle"></p>
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+
+                            <div class="container">
+                                    <p class="mt-4 youMight">You might also like:</p>
+                                <div class="card-deck" id="outrasOpcoes">
+
+                                    
+
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+        //Importando Jquery
+    </script>  
+        
+    <script src="js/favourite.js"></script>
+</body>
+</html>
